@@ -13,7 +13,7 @@ void test_rgb2gray() {
     int h, w, c;
 
     imread(path, &img, &h, &w, &c);
-    std::cout << "读取图片images/rgb2gray/input.jpg，高度为" << h << "，高度为" << w
+    std::cout << "读取图片images/rgb2gray/input.jpg，高度为" << h << "，宽度为" << w
               << "，通道数为" << c
               << std::endl;
 
@@ -153,6 +153,8 @@ void test_resize() {
         free(resized);
     }
     free(img);
+    std::cout << std::endl << std::endl;
+    
 }
 
 int main() {
